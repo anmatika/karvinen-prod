@@ -25,14 +25,12 @@ ng-controller="KuvagalleriaCtrl"> -->
 					<strong>{{ slideItem.header }}</strong>
 				</div>				
 				<div class="row">
-					<carousel interval="myInterval">
-						<slide ng-repeat="slide in slideItem.images" active="slide.active">
-							<img ng-src="{{ slide.image }}" style="margin:auto;">
-							<div class="carousel-caption">
+						<div class="col-sm-12" ng-repeat="slide in slideItem.images">
+							<img ng-src="{{ slide.image }}" style="margin:auto; box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75); max-width: 100%;" >
 								<p>{{ slide.text }}</p>
-							</div>
-						</slide>
-					</carousel>
+							</img>
+						</div>
+					</div>
 				</div>
 			</div>
 	
