@@ -10,16 +10,16 @@
     <link rel="icon" type="images/karvisenkukka.png" href="favicon.ico" >
     <link rel="stylesheet" href="styles/vendor.3169d276.css">
     <link rel="stylesheet" href="styles/main.405d3179.css">
-    
+
       <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        
+
       </head>
       <body ng-app="karvinenApp">
         <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
         your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+
       <div id="top_logo" ng-controller="TopLogoCtrl" class="hidden-xs">
         <div id="logo_image">
           <a ng-href="#/"><img src="images/karvinenlogo.0458d61e.png" /></a>
@@ -28,7 +28,7 @@
 
         <!-- Navigation -->
         <nav class="navbar navbar-default" role="navigation">
-          
+
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-1">
@@ -42,7 +42,7 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="collapse-1" ng-controller="HeaderCtrl" nav-collapse="">
-              
+
               <ul class="nav navbar-nav">
                 <li class="dropdown" ng-class="{ active: isActive('/')
                   || isActive('/organisaatiokaavio')
@@ -60,8 +60,8 @@
                     <li><a ng-href="#/toimintakertomus">Toimintakertomukset</a></li>
                   </ul>
                 </li>
-                <li class="dropdown" ng-class="{ active: isActive('/yhteystiedot') || isActive('/bussiyhteydet') }">       
-                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Yhteystiedot<span class="caret"></span></a>           
+                <li class="dropdown" ng-class="{ active: isActive('/yhteystiedot') || isActive('/bussiyhteydet') }">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Yhteystiedot<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a ng-href="#/yhteystiedot">Kartta ja yhteystiedot</a></li>
                     <li><a ng-href="#/bussiyhteydet">Bussiyhteydet</a></li>
@@ -84,11 +84,11 @@
                   </ul>
                 </li>
                 <li ng-class="{ active: isActive('/nuoret')}"><a ng-href="#/nuoret">Nuoret</a></li>
-                
+
                 <li ng-class="{ active: isActive('/ruokalista')}"><a ng-href="#/ruokalista">Ruokalista</a></li>
                 <li ng-class="{ active: isActive('/kuvagalleria')}"><a id="kuvagalleria" ng-href="#/kuvagalleria">Galleria</a></li>
                 <li ng-class="{ active: isActive('/linkit')}"><a ng-href="#/linkit">Linkit</a></li>
-                
+
               </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -115,8 +115,8 @@
                 </p>
               </div>
               <div class="col-sm-6">
-                <p>Yhdistyksen toimintaa tukevat RAY ja Helsingin kaupunki</p>
-                <a href="https://www.ray.fi" target="newtab"><img src="/images/ray3.04b02f8b.png" /></a>
+                <p>Yhdistyksen toimintaa tukevat STEA ja Helsingin kaupunki</p>
+                <a href="http://stea.fi" target="newtab"><img src="/images/stm90x90.png" /></a>
                 <a href="http://hel.fi" target="newtab"><img src="/images/helsinki_vaakuna2.cb58d931.png" /></a>
               </div>
             </div>
@@ -142,10 +142,10 @@
         <script src="scripts/oldieshim.c17b592e.js"></script>
         <![endif]-->
         <script src="scripts/vendor.3cdfe8fd.js"></script>
-        
+
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAlpASPdN8RLwB3yDv3X4jr8n9mdKi0xk"></script>
         <script src="scripts/scripts.4f89c144.js"></script>
-        
+
         <!-- hides mobile menu when clicked  -->
         <script>$('.navbar-collapse > li a').click(function(){
         $('.collapse.in').removeClass('in').css('height', '0');
